@@ -506,8 +506,8 @@ export function FileList({
             </AlertDialogTitle>
             <AlertDialogDescription>
               {status === "active"
-                ? `Are you sure you want to move "${fileToDelete?.name}" to trash? You can still restore it later.`
-                : `Are you sure you want to permanently delete "${fileToDelete?.name}"? This action cannot be undone.`}
+                ? `Are you sure you want to move file to trash? You can still restore it later.`
+                : `Are you sure you want to permanently delete file? This action cannot be undone.`}
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
