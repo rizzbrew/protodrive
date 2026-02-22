@@ -64,5 +64,6 @@ Simply connect your fork to vercel-cli. The project is configured to handle the 
 4. **Run**: `bun run dev`
 
 ## 📄 License & Disclaimer
+
 MIT License. **Educational Purpose Only.**
 This project uses Discord's CDN for storage. Please comply with Discord's Terms of Service and use responsibly for personal, small-scale projects.

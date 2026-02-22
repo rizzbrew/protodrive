@@ -9,19 +9,19 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
-      '@server': path.resolve(__dirname, '../backend'),
+      "@server": path.resolve(__dirname, "../backend"),
     },
   },
   server: {
-		proxy: {
-			'/api': {
-				target: 'http://127.0.0.1:3000',
-				changeOrigin: true,
-			},
-		},
-	},
+    proxy: {
+      "/api": {
+        target: "http://127.0.0.1:3000",
+        changeOrigin: true,
+      },
+    },
+  },
   build: {
-  outDir: path.resolve(__dirname, "../dist"),
-  emptyOutDir: true
-}
+    outDir: path.resolve(__dirname, "../dist"),
+    emptyOutDir: true,
+  },
 });
