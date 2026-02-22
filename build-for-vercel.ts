@@ -11,7 +11,10 @@ console.log("📦 Preparing Vercel output...");
 
 // Copy API function
 mkdirSync(".vercel/output/functions/api/index.func", { recursive: true });
-copyFileSync("api/index.js", ".vercel/output/functions/api/index.func/index.js");
+copyFileSync(
+  "api/index.js",
+  ".vercel/output/functions/api/index.func/index.js",
+);
 
 // Copy config for serverless function
 await Bun.write(
@@ -20,7 +23,7 @@ await Bun.write(
     runtime: "nodejs20.x",
     handler: "index.js",
     launcherType: "Nodejs",
-  })
+  }),
 );
 
 // Copy static frontend
@@ -37,7 +40,7 @@ await Bun.write(
       { handle: "filesystem" },
       { src: "/(.*)", dest: "/index.html" },
     ],
-  })
+  }),
 );
 
 console.log("✅ Build complete!");
