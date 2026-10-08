@@ -9,14 +9,7 @@ import {
 } from "lucide-react";
 
 export type FileType =
-  | "image"
-  | "video"
-  | "audio"
-  | "pdf"
-  | "text"
-  | "archive"
-  | "code"
-  | "other";
+  "image" | "video" | "audio" | "pdf" | "text" | "archive" | "code" | "other";
 
 export function getFileExtension(fileName: string): string {
   return fileName.split(".").pop()?.toLowerCase() || "";
